@@ -1,4 +1,5 @@
 <strong>Click on some link & observe the URL!</strong>
+<h4>by links</h4>
 <ul>
   <li>
     <a style="color: red" routerLink="/first-component">call the first component</a>
@@ -7,4 +8,7 @@
     <a style="color: blue" routerLink="/second-component">call the second component</a>
   </li>
 </ul>
+<h4>by buttons</h4>
+<button [routerLink]="['/first-component']" style="color: blue">call the first component</button>
+<button [routerLink]="['/second-component']" style="color: red">call the second component</button>
 <router-outlet></router-outlet>
